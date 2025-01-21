@@ -23,7 +23,7 @@ class NewsletterSubscriberDataTable extends DataTable
     {
         return (new EloquentDataTable($query))
             ->addColumn('action', function($query){
-                $deleteBtn = "<a href='".route('admin.subscribers.destory', $query->id)."' class='btn btn-danger ml-2 delete-item'><i class='far fa-trash-alt'></i></a>";
+                $deleteBtn = "<a href='".route('admin.subscribers.destroy', $query->id)."' class='btn btn-danger ml-2 delete-item'><i class='far fa-trash-alt'></i></a>";
 
                 return $deleteBtn;
             })

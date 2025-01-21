@@ -79,7 +79,7 @@ class FlashSaleController extends Controller
         return response(['message' => 'Status has been updated!']);
     }
 
-    public function destory(string $id)
+    public function destroy(string $id)
     {
         $flashSaleItem = FlashSaleItem::findOrFail($id);
         $flashSaleItem->delete();

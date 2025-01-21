@@ -56,7 +56,7 @@
                                                     </div>
                                                     <div class="col-xl-4 col-md-4">
                                                         <div class="wsus__invoice_single text-md-end">
-                                                            <h5>Order id: #{{ $order->invocie_id }}</h5>
+                                                            <h5>Order id: #{{ $order->invoice_id }}</h5>
                                                             <h6>Order status:
                                                                 {{ config('order_status.order_status_admin')[$order->order_status]['status'] }}
                                                             </h6>

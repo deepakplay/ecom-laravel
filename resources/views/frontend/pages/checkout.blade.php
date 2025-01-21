@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="wsus__order_details" id="sticky_sidebar">
-                            <p class="wsus__product">shipping Methods</p>
+                            <p class="wsus__product">Shipping Methods</p>
                             @foreach ($shippingMethods as $method)
                                 @if ($method->type === 'min_cost' && getCartTotal() >= $method->min_cost)
                                     <div class="form-check">
@@ -234,9 +234,9 @@
         $('#submitCheckoutForm').on('click', function(e){
             e.preventDefault();
             if($('#shipping_method_id').val() == ""){
-                toastr.error('Shipping method is requred');
+                toastr.error('Shipping method is required');
             }else if ($('#shipping_address_id').val() == ""){
-                toastr.error('Shipping address is requred');
+                toastr.error('Shipping address is required');
             }else if (!$('.agree_term').prop('checked')){
                 toastr.error('You have to agree website terms and conditions');
             }else {

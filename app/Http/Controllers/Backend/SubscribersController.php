@@ -38,7 +38,7 @@ class SubscribersController extends Controller
 
     }
 
-    public function destory(string $id)
+    public function destroy(string $id)
     {
        $subscriber = NewsletterSubscriber::findOrFail($id)->delete();
        return response(['status' => 'success', 'message' => 'deleted successfully']);

@@ -37,7 +37,7 @@ class WishlistController extends Controller
         return response(['status' => 'success', 'message' => 'Product added into the wishlist!', 'count' => $count]);
     }
 
-    public function destory(string $id)
+    public function destroy(string $id)
     {
 
         $wishlistProducts = Wishlist::where('id', $id)->firstOrFail();

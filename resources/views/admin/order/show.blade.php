@@ -1,6 +1,6 @@
 @php
     $address = json_decode($order->order_address);
-    $shipping = json_decode($order->shpping_method);
+    $shipping = json_decode($order->shipping_method);
     $coupon = json_decode($order->coupon);
 
 @endphp
@@ -20,7 +20,7 @@
                   <div class="col-lg-12">
                     <div class="invoice-title">
                       <h2></h2>
-                      <div class="invoice-number">Order #{{$order->invocie_id}}</div>
+                      <div class="invoice-number">Order #{{$order->invoice_id}}</div>
                     </div>
                     <hr>
                     <div class="row">

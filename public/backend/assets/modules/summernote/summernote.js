@@ -6835,7 +6835,7 @@ var Context = /** @class */ (function () {
         this.ui.removeLayout(this.$note, this.layoutInfo);
     };
     /**
-     * destory modules and other resources and initialize it again
+     * destroy modules and other resources and initialize it again
      */
     Context.prototype.reset = function () {
         var disabled = this.isDisabled();

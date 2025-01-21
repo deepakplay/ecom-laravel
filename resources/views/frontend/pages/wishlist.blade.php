@@ -66,7 +66,7 @@
                                     <tr class="d-flex">
                                         <td class="wsus__pro_img"><img src="{{asset($item->product->thumb_image)}}" alt="product"
                                                 class="img-fluid w-100">
-                                            <a href="{{route('user.wishlist.destory', $item->id)}}"><i class="far fa-times"></i></a>
+                                            <a href="{{route('user.wishlist.destroy', $item->id)}}"><i class="far fa-times"></i></a>
                                         </td>
 
                                         <td class="wsus__pro_name" style="width:500px">

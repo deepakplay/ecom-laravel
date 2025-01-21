@@ -24,7 +24,7 @@ class TransactionDataTable extends DataTable
         return (new EloquentDataTable($query))
             ->addColumn('action', 'transaction.action')
             ->addColumn('invoice_id', function($query){
-                return '#'.$query->order->invocie_id;
+                return '#'.$query->order->invoice_id;
             })
             ->addColumn('amount_in_base_currency', function($query){
                 return $query->amount.' '.$query->order->currency_name;
@@ -34,7 +34,7 @@ class TransactionDataTable extends DataTable
             })
             ->filterColumn('invoice_id', function($query, $keyword){
                 $query->whereHas('order', function($query) use ($keyword){
-                    $query->where('invocie_id', 'like', "%$keyword%");
+                    $query->where('invoice_id', 'like', "%$keyword%");
                 });
             })
 

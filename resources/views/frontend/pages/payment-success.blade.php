@@ -35,7 +35,7 @@
         <div class="container">
             <div class="wsus__pay_info_area">
                 <div class="row">
-                    <h1>Paymet success!</h1>
+                    <h1>Payment success!</h1>
                 </div>
             </div>
         </div>

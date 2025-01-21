@@ -1,6 +1,6 @@
 @php
     $address = json_decode($order->order_address);
-    $shipping = json_decode($order->shpping_method);
+    $shipping = json_decode($order->shipping_method);
     $coupon = json_decode($order->coupon);
 @endphp
 
@@ -57,7 +57,7 @@
                                                     </div>
                                                     <div class="col-xl-4 col-md-4">
                                                         <div class="wsus__invoice_single text-md-end">
-                                                            <h5>Order id: #{{ $order->invocie_id }}</h5>
+                                                            <h5>Order id: #{{ $order->invoice_id }}</h5>
                                                             <h6>Order status:
                                                                 {{ config('order_status.order_status_admin')[$order->order_status]['status'] }}
                                                             </h6>

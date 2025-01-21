@@ -121,7 +121,7 @@ Route::put('flash-sale', [FlashSaleController::class, 'update'])->name('flash-sa
 Route::post('flash-sale/add-product', [FlashSaleController::class, 'addProduct'])->name('flash-sale.add-product');
 Route::put('flash-sale/show-at-home/status-change', [FlashSaleController::class, 'chageShowAtHomeStatus'])->name('flash-sale.show-at-home.change-status');
 Route::put('flash-sale-status', [FlashSaleController::class, 'changeStatus'])->name('flash-sale-status');
-Route::delete('flash-sale/{id}', [FlashSaleController::class, 'destory'])->name('flash-sale.destory');
+Route::delete('flash-sale/{id}', [FlashSaleController::class, 'destroy'])->name('flash-sale.destroy');
 
 /** Coupon Routes */
 Route::put('coupons/change-status', [CouponController::class, 'changeStatus'])->name('coupons.change-status');
@@ -187,12 +187,12 @@ Route::resource('blog-category', BlogCategoryController::class);
 Route::put('blog/status-change', [BlogController::class, 'changeStatus'])->name('blog.status-change');
 Route::resource('blog', BlogController::class);
 Route::get('blog-comments', [BlogCommentController::class, 'index'])->name('blog-comments.index');
-Route::delete('blog-comments/{id}/destory', [BlogCommentController::class, 'destory'])->name('blog-comments.destory');
+Route::delete('blog-comments/{id}/destroy', [BlogCommentController::class, 'destroy'])->name('blog-comments.destroy');
 
 
 /** Subscribers route */
 Route::get('subscribers', [SubscribersController::class, 'index'])->name('subscribers.index');
-Route::delete('subscribers/{id}', [SubscribersController::class, 'destory'])->name('subscribers.destory');
+Route::delete('subscribers/{id}', [SubscribersController::class, 'destroy'])->name('subscribers.destroy');
 Route::post('subscribers-send-mail', [SubscribersController::class, 'sendMail'])->name('subscribers-send-mail');
 
 /** Advertisement Routes */
@@ -215,7 +215,7 @@ Route::put('customer/status-change', [CustomerListController::class, 'changeStat
 /** coustomer list routes */
 Route::get('admin-list', [AdminListController::class, 'index'])->name('admin-list.index');
 Route::put('admin-list/status-change', [AdminListController::class, 'changeStatus'])->name('admin-list.status-change');
-Route::delete('admin-list/{id}', [AdminListController::class, 'destory'])->name('admin-list.destory');
+Route::delete('admin-list/{id}', [AdminListController::class, 'destroy'])->name('admin-list.destroy');
 
 
 /** manage user routes */
