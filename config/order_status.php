@@ -9,7 +9,7 @@ return [
         ],
         'processed_and_ready_to_ship' => [
             'status' => 'Processed and ready to ship',
-            'details' => 'Your pacakge has been processed and will be with our delivery parter soon'
+            'details' => 'Your package has been processed and will be with our delivery partner soon'
         ],
         'dropped_off' => [
             'status' => 'Dropped Off',
@@ -42,7 +42,7 @@ return [
         ],
         'processed_and_ready_to_ship' => [
             'status' => 'Processed and ready to ship',
-            'details' => 'Your pacakge has been processed and will be with our delivery parter soon'
+            'details' => 'Your package has been processed and will be with our delivery partner soon'
         ]
     ]
 ];
